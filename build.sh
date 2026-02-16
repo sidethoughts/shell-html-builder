@@ -82,4 +82,4 @@ replace_html_module_file() {
 
 find_html_files
 
-cp $newFolder/root_index.html $homeFolder/index.html
+cp "$newFolder"root_index.html $homeFolder/index.html
