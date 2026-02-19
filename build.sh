@@ -2,11 +2,11 @@
 
 #config
 currentFolder=$(pwd)
-htmlFolder="$currentFolder/html/home/"
-moduleFolder="$currentFolder/modules/"
-newFolder=~/Dokumente/coding/sidethoughts-website/home/
-newModulesFolder=~/Dokumente/coding/sidethoughts-website/home/modules/
-homeFolder=~/Dokumente/coding/sidethoughts-website/home/..
+htmlFolder="$currentFolder/html/home/" # folder where the html-files are saved with @includes inside
+moduleFolder="$currentFolder/modules/" # folder where the corresponding modules are saved as html files
+newFolder=~/Dokumente/coding/sidethoughts-website/home/ # folder where the html files are saved with the modules inside
+newModulesFolder=~/Dokumente/coding/sidethoughts-website/home/modules/ # folder where the modules files are saved, if they had a @includes inside here the module wil be copied inside
+homeFolder=~/Dokumente/coding/sidethoughts-website/ # root folder of your project where newFolder is direct child
 
 
 if [[ -e $newFolder ]]; then 
